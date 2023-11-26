@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Thời Khóa Biểu Cả Tuần</title>
+</head>
+<body>
+  <h1>Thời Khóa Biểu Cả Tuần</h1>
+  <ul>
+    <% tuanHoc.forEach(th => { %>
+      <li><%= th.ma_tuanhoc %> - Thứ <%= th.thu_hoc %> (<a href="/tuanhoc/sua/<%= th.ma_tuanhoc %>">Sửa</a>, <a href="/tuanhoc/xoa/<%= th.ma_tuanhoc %>">Xóa</a>)</li>
+    <% }); %>
+  </ul>
+</body>
+</html>

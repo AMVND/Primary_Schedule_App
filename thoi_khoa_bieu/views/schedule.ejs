@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Thời Khóa Biểu</title>
+    </head>
+    <body>
+        <h1>Thời Khóa Biểu</h1>
+
+        <a href="/tuanhoc">Thời Khóa Biểu Cả Tuần</a>
+
+        <h1>Danh sách môn học</h1>
+        <ul>
+            <% monHoc.forEach(mh => { %>
+            <li><%= mh.ma_monhoc %> - <%= mh.ten_monhoc %> - <%= mh.loai_monhoc
+                %> (<a
+                    href="/monhoc/sua/<%= mh.ma_monhoc %>">Sửa</a>, <a
+                    href="/monhoc/xoa/<%= mh.ma_monhoc %>">Xóa</a>)</li>
+            <% }); %>
+        </ul>
+        <a href="/monhoc/them">Thêm Môn Học</a>
+    </body>
+</html>

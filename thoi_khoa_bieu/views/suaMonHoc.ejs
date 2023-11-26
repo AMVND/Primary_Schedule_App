@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sửa Môn Học</title>
+</head>
+<body>
+  <h1>Sửa Môn Học</h1>
+  <form action="/monhoc/sua/<%= monHoc.ma_monhoc %>" method="post">
+    <label for="ten_monhoc">Tên Môn Học:</label>
+    <input type="text" id="ten_monhoc" name="ten_monhoc" value="<%= monHoc.ten_monhoc %>" required>
+    <br>
+    <label for="loaiMonHoc">Loại Môn Học:</label>
+    <input type="text" id="loai_monhoc" name="loai_monhoc" value="<%= monHoc.loai_monhoc %>" required>
+    <br>
+    <button type="submit">Sửa Môn Học</button>
+  </form>
+</body>
+</html>
